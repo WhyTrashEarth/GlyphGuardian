@@ -1,0 +1,13 @@
+# Legitimate Domains
+youtube.com
+paypal.com
+microsoft.com
+amazon.com
+google.com
+
+# Homograph Attack Examples (Spoofed Domains)
+уoutube.com    # Cyrillic 'у' instead of Latin 'y'
+раypal.com     # Cyrillic 'р' and 'а' instead of Latin 'p' and 'a'
+microsоft.com  # Cyrillic 'о' instead of Latin 'o'
+arnazon.com    # 'rn' instead of 'm'
+gοogle.com     # Greek 'ο' instead of Latin 'o'
