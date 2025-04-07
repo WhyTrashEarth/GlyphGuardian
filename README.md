@@ -30,7 +30,7 @@ Copyright (c) 2025 Alec / WhyTrashEarth
 ΧΟΥΑΙ ΤΡΑΣ ΕΡΘ 1796
 
 If GlyphGuardian protects you or your company, we ask only one thing:  
-Please consider donating to an environmental cause. 🌎
+Please consider writing us a friendly letter/email/shoutout to WhyTrashEarth :) 
 
 ## Author's Note
 
