@@ -1,0 +1,54 @@
+# GlyphGuardian - Project Roadmap
+
+**Created by Alec AKA Chunks / WhyTrashEarth**  
+ΧΟΥΑΙ ΤΡΑΣ ΕΡΘ 1796
+
+---
+
+## Introduction
+
+GlyphGuardian is an open-source initiative to protect users from homograph (lookalike character) attacks across websites, emails, and more.  
+Our mission is to make identity spoofing obvious, prevent costly breaches, and make the Internet a safer place for everyone.
+
+---
+
+## Stage Plan
+
+| Stage | Goal | Status |
+|:------|:-----|:------|
+| 1 | Research Unicode + homograph detection methods | Researching |
+| 2 | Develop initial Chromium Extension (Chrome, Brave, Edge) | Planning |
+| 3 | Develop initial Firefox Extension | Planning |
+| 4 | Expand to lightweight desktop app (Windows, macOS) for link protection in emails and apps | Future |
+| 5 | Investigate Linux (Thunderbird integration, Evolution, KMail) | Future |
+| 6 | Explore lightweight mobile app/browser plugin versions (Android/iOS) | Future |
+
+---
+
+## Extra Future Goals
+
+- **Whitelist System:** Allow trusted companies (e.g., Porkbun, GitHub) to register safe character sets and known domains.
+- **Enterprise Dashboard:** Allow companies to track alerts internally.
+- **Silent Canary Tokens:** Allow silent alerts if major spoof attempts are detected inside organizations.
+
+---
+
+## Status
+
+> Currently in planning and research phase.  
+> Community feedback, collaboration, and developers welcome!
+
+---
+
+## License
+
+MIT License.  
+Free for anyone to use, modify, and expand.  
+Please attribute: Alec / WhyTrashEarth
+
+---
+
+## Contact
+
+- Email: Alec@WhyTrashEarth.org
+- Socials: DM @WhyTrashEarth on most platforms
