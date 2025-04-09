@@ -34,7 +34,7 @@ GlyphGuardian stops this before you click.
 
 ---
 
-## Roadmap
+## Roadmap (Check out official ROADMAP file for more details)
 
 - [x] Project Launch
 - [ ] Browser Extension (Firefox/Chrome)
@@ -57,7 +57,14 @@ If GlyphGuardian protects you or your company, please consider donating to an en
 
 ---
 
+## Future Plans
+
+We aim to expand GlyphGuardian beyond browsers to email clients like Outlook and Thunderbird.  
+Eventually, lightweight desktop apps will be created for Windows, macOS, and Linux.
+
+---
 
 ## Author's Note
 
-Stay Super Awesome :) 
+Let's Improve Our Earth Together and protect many users everywhere! If you want to help in anyway
+please contact me, I plan to make a website soon and I will credit everyone that assists on this necessary endeavor! 
