@@ -62,6 +62,9 @@ If GlyphGuardian protects you or your company, please consider donating to an en
 We aim to expand GlyphGuardian beyond browsers to email clients like Outlook and Thunderbird.  
 Eventually, lightweight desktop apps will be created for Windows, macOS, and Linux.
 
+- Typosquatting Detection — Identify links that use common misspellings (e.g., "porkbunt.com" instead of "porkbun.com").
+- Future Feature: Subdomain Deception Detection — Warn users about tricky subdomain structures (e.g., "porkbun.com-products.domains").
+
 ---
 
 ## Author's Note
