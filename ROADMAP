@@ -33,6 +33,19 @@ Our mission is to make identity spoofing obvious, prevent costly breaches, and m
 
 ---
 
+## Phase 2: Expanded Threat Detection
+
+In addition to Unicode-based homograph protection, Glyph Guardian will expand to detect:
+
+- **Typosquatting Attacks**  
+  Detect domains that are intentionally misspelled to trick users (e.g., "porkbunt.com").
+
+- **Subdomain Deception**  
+  Alert users if suspicious subdomain structures are used to mimic legitimate domains (e.g., "porkbun.com-products.domains").
+
+These enhancements will further strengthen our ability to stop phishing and impersonation attempts across multiple attack vectors.
+
+
 ## Status
 
 > Currently in planning and research phase.  
