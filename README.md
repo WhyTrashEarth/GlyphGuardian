@@ -68,3 +68,10 @@ Eventually, lightweight desktop apps will be created for Windows, macOS, and Lin
 
 Let's Improve Our Earth Together and protect many users everywhere! If you want to help in anyway
 please contact me, I plan to make a website soon and I will credit everyone that assists on this necessary endeavor! 
+
+
+---
+
+## Special Thanks
+
+- **Porkbun Team** — For providing valuable feedback and suggestions during the early design of Glyph Guardian. Your support is greatly appreciated!
