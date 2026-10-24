@@ -1,0 +1,9 @@
+{
+  "name": "glyphguardian",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "GlyphGuardian website and browser-local Unicode character lab",
+  "scripts": { "dev": "node scripts/preview.mjs", "test": "node --test tests/*.test.mjs", "check": "node scripts/check.mjs" },
+  "engines": { "node": ">=22" }
+}

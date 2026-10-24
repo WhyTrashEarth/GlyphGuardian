@@ -1,80 +1,40 @@
 # GlyphGuardian
 
-**Lightweight Unicode homograph detection system.**
+**Looks right. Look again.**
 
-GlyphGuardian aims to protect users from deceptive link spoofing attacks by detecting suspicious characters that mimic trusted domains.
+[Visit glyphguardian.com](https://glyphguardian.com) · [Contact / contribute](https://github.com/WhyTrashEarth/GlyphGuardian/issues) · [Roadmap](ROADMAP)
 
-This project is part of WhyTrashEarth-Projects.
+GlyphGuardian is an independent, open-source project exploring Unicode look-alike characters and clearer digital identities. Created by Alec / WhyTrashEarth.
 
----
+## Available now
 
-## Why It Matters
+- An accessible, responsive website explaining character-based deception.
+- An educational character lab that reveals exact Unicode code points and broad writing-system labels.
+- Examples of look-alike letters, legitimate multilingual text, and hidden characters.
+- Browser-local processing: no input uploads, account, saved history, analytics code, or third-party fonts.
 
-Every year, billions are lost to phishing attacks — many of them using invisible tricks like Unicode domain spoofing.  
-GlyphGuardian is a lightweight defense designed to catch these tricks before they catch you.
+The lab **does not determine whether a link is safe**. It does not open addresses, check reputation, decode Punycode, normalize text, or implement the complete Unicode confusables algorithm. Browser extensions, automatic protection, and integrations remain future work. See [technical notes](TECHNOTES.md).
 
----
+## Local development
 
-## How It Works
+Requires Node.js 22 or newer. No packages need installing.
 
-- Scans domain names for lookalike Unicode characters
-- Compares against trusted whitelisted domains
-- Flags, blocks, or warns users before danger
+```sh
+npm run dev
+npm test
+npm run check
+```
 
----
+Open `http://127.0.0.1:4173`. The local server sends a noindex header; the production files allow indexing. The deployable static site is `site/`.
 
-## Example Threat
+## Deployment
 
-- Trusted Domain: `youtube.com`
-- Spoofed Domain: `уoutube.com` *(Cyrillic "у" instead of Latin "y")*
+Cloudflare Pages serves the `site/` directory from the `main` branch. The production build command is `npm test && npm run check`. The canonical website is **https://glyphguardian.com**. See [deployment notes](docs/DEPLOYMENT.md) for configuration and verification.
 
-**Both look the same — but one could steal your information.**
+## Credits and history
 
-GlyphGuardian stops this before you click.
+The 2026 redesign uses the project's original bark photograph, supplied by Alec, and the black, white, and pink identity visible in the [archived website](https://web.archive.org/web/20251027230802/https://glyphguardian.com/). The supplied original is preserved outside the repository; only its optimized web derivative is shipped. [Asset notes](docs/ASSETS.md).
 
----
+Thank you to the **Porkbun team** for early feedback and suggestions. The original 2025 planning documents are preserved in [docs/history](docs/history/). They describe aspirations, not verified shipped protection or measured security performance.
 
-## Roadmap (Check out official ROADMAP file for more details)
-
-- [x] Project Launch
-- [ ] Browser Extension (Firefox/Chrome)
-- [ ] CLI Scanner (Advanced users)
-- [ ] Integration into Email Gateways
-
----
-
-## License
-
-MIT License
-
-Copyright (c) 2025 Alec / WhyTrashEarth  
-ΧΟΥΑΙ ΤΡΑΣ ΕΡΘ 1796
-
-If GlyphGuardian protects you or your company, please consider donating to an environmental cause. 🌎
-
-**Contact:** Alec@WhyTrashEarth.org  
-**Social:** [@WhyTrashEarth](https://x.com/WhyTrashEarth) (most platforms)
-
----
-
-## Future Plans
-
-We aim to expand GlyphGuardian beyond browsers to email clients like Outlook and Thunderbird.  
-Eventually, lightweight desktop apps will be created for Windows, macOS, and Linux.
-
-- Typosquatting Detection — Identify links that use common misspellings (e.g., "porkbunt.com" instead of "porkbun.com").
-- Future Feature: Subdomain Deception Detection — Warn users about tricky subdomain structures (e.g., "porkbun.com-products.domains").
-
----
-
-## Author's Note
-
-Let's Improve Our Earth Together and protect many users everywhere! If you want to help in anyway
-please contact me, I plan to make a website soon and I will credit everyone that assists on this necessary endeavor! 
-
-
----
-
-## Special Thanks
-
-- **Porkbun Team** — For providing valuable feedback and suggestions during the early design of Glyph Guardian. Your support is greatly appreciated!
+Code: [MIT License](LICENSE). Fonts: SIL Open Font License; license files are included beside the fonts. Please do not post private links, credentials, or secrets in public GitHub Issues.

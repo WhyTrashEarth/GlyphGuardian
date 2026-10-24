@@ -1,67 +1,28 @@
-# GlyphGuardian - Project Roadmap
+# GlyphGuardian — Project roadmap
 
-**Created by Alec AKA Chunks / WhyTrashEarth**  
-ΧΟΥΑΙ ΤΡΑΣ ΕΡΘ 1796
+Created by Alec / WhyTrashEarth. Updated October 24, 2026.
 
----
+## Available
 
-## Introduction
+- [x] Public source repository and project website.
+- [x] Browser-local educational character inspector.
+- [x] Look-alike, multilingual, and hidden-character examples.
+- [x] Responsive design, keyboard-operable controls, and privacy explanation.
 
-GlyphGuardian is an open-source initiative to protect users from homograph (lookalike character) attacks across websites, emails, and more.  
-Our mission is to make identity spoofing obvious, prevent costly breaches, and make the Internet a safer place for everyone.
+## Research and next steps
 
----
+- [ ] Expand and review Unicode character coverage and names.
+- [ ] Evaluate UTS #39 confusable handling and internationalized domain rules.
+- [ ] Develop representative tests with multilingual contributors.
+- [ ] Study false positives, accessibility, and how browsers display addresses.
 
-## Stage Plan
+## Planned, not shipped
 
-| Stage | Goal | Status |
-|:------|:-----|:------|
-| 1 | Research Unicode + homograph detection methods | Researching |
-| 2 | Develop initial Chromium Extension (Chrome, Brave, Edge) | Planning |
-| 3 | Develop initial Firefox Extension | Planning |
-| 4 | Expand to lightweight desktop app (Windows, macOS) for link protection in emails and apps | Future |
-| 5 | Investigate Linux (Thunderbird integration, Evolution, KMail) | Future |
-| 6 | Explore lightweight mobile app/browser plugin versions (Android/iOS) | Future |
+- [ ] Chromium and Firefox browser extension prototypes.
+- [ ] Practical warning design and trusted-domain comparison.
+- [ ] Evaluate CLI, email-client, desktop, and mobile integrations.
+- [ ] Explore typosquatting and deceptive subdomain detection.
 
----
+No delivery dates or security guarantees are implied. The current lab does not determine whether a link is safe. Original 2025 plans are preserved in docs/history/ROADMAP-2025.md.
 
-## Extra Future Goals
-
-- **Whitelist System:** Allow trusted companies (e.g., Porkbun, GitHub) to register safe character sets and known domains.
-- **Enterprise Dashboard:** Allow companies to track alerts internally.
-- **Silent Canary Tokens:** Allow silent alerts if major spoof attempts are detected inside organizations.
-
----
-
-## Phase 2: Expanded Threat Detection
-
-In addition to Unicode-based homograph protection, Glyph Guardian will expand to detect:
-
-- **Typosquatting Attacks**  
-  Detect domains that are intentionally misspelled to trick users (e.g., "porkbunt.com").
-
-- **Subdomain Deception**  
-  Alert users if suspicious subdomain structures are used to mimic legitimate domains (e.g., "porkbun.com-products.domains").
-
-These enhancements will further strengthen our ability to stop phishing and impersonation attempts across multiple attack vectors.
-
-
-## Status
-
-> Currently in planning and research phase.  
-> Community feedback, collaboration, and developers welcome!
-
----
-
-## License
-
-MIT License.  
-Free for anyone to use, modify, and expand.  
-Please attribute: Alec / WhyTrashEarth
-
----
-
-## Contact
-
-- Email: Alec@WhyTrashEarth.org
-- Socials: DM @WhyTrashEarth on most platforms
+Contribute or contact: https://github.com/WhyTrashEarth/GlyphGuardian/issues

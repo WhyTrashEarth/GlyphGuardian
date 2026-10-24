@@ -1,50 +1,25 @@
-# GlyphGuardian — Technical Notes 🛡️
+# GlyphGuardian — Technical notes
 
----
+## Current implementation
 
-## Core Innovations
+The dependency-free static website lives in `site/`. `inspector.js` is a pure character-inspection module; `app.js` renders the result using DOM creation and `textContent` rather than HTML injection. Tests run with Node's built-in test runner.
 
-GlyphGuardian protects users by performing two types of checks:
+The lab preserves input exactly and iterates Unicode code points with `Array.from`. It displays at most 100 code points, reports truncation, and distinguishes code points from grapheme clusters. Combining marks receive a dotted-circle visual aid. Control/format characters are shown as placeholders so they cannot reorder the result display.
 
-### 1. Visual Character Inspection
-- Identifies lookalike domains by comparing visual similarities (e.g., "Yоutube.com" where the "o" is Cyrillic).
-- Alerts users when domains appear visually suspicious or contain mixed character sets.
+Writing-system labels use JavaScript Unicode property escapes for a defined set of scripts. Other scripts are labeled as such. The character-name map is deliberately small; unknown names are labeled “Unicode character,” not invented. Mixed writing systems are an observation, not evidence of fraud. A small illustrative set of look-alikes receives emphasis in mixed-script examples.
 
-### 2. Unicode Value Verification
-- Goes deeper than traditional visual checks.
-- Analyzes the actual **Unicode codepoints** of every character in the URL.
-- Detects when non-standard Unicode characters are used to spoof legitimate domains.
-- Example:
-  - Latin "A" (U+0041) vs Cyrillic "А" (U+0410) — they *look identical* but have different Unicode values.
+## Limitations
 
-**This two-layered approach dramatically increases detection accuracy** without relying solely on predefined blacklists or simple visual cues.
+- Not a safety verdict, URL parser, reputation check, scanner, or browser extension.
+- No full Unicode Character Database names or UTS #39 confusable-skeleton implementation.
+- No normalization, IDNA validation, Punycode decoding, trusted-domain matching, or automatic blocking.
+- Fonts and rendering can change how similar characters appear.
+- Legitimate names and addresses can contain non-Latin letters and multiple writing systems.
 
----
+For further research: [Unicode Security Mechanisms (UTS #39)](https://www.unicode.org/reports/tr39/).
 
-## Future Expansion
+## Privacy and delivery
 
-- Whitelisting verified international domains (to prevent false positives)
-- Browser-based "safe link" extensions
-- Thunderbird, Outlook, and email client integrations
-- Lightweight open API for organizations
+No fetch requests, input persistence, telemetry, or third-party client assets are included. Fonts are self-hosted. Cloudflare receives ordinary hosting requests; this is separate from inspecting text, which remains inside the tab. The response policy blocks outgoing connections from the site JavaScript, plugins, framing, and form submissions.
 
----
-
-## Why Unicode Verification Matters
-
-Modern phishing attacks use *visual deception* based on Unicode similarity.  
-Most users — and even trained security professionals — cannot spot the difference with the naked eye.
-
-**By inspecting the actual Unicode values in real time, GlyphGuardian provides deeper and earlier warning signals before harm occurs.**
-
----
-
-## License
-
-Licensed under the [MIT License](LICENSE).
-
-Created by **Alec AKA Chunks / WhyTrashEarth**
-
-ΧΟΥΑΙ ΤΡΑΣ ΕΡΘ 1796
-
----
+The original design notes remain in `docs/history/TECHNOTES-2025.md`; their proposed protections and accuracy claims are not established results.
