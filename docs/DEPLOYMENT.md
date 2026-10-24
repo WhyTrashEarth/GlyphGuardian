@@ -1,6 +1,6 @@
 # Deployment
 
-## Intended production configuration
+## Production configuration
 
 - Repository: `WhyTrashEarth/GlyphGuardian`
 - Branch: `main`
@@ -10,8 +10,8 @@
 - Output: `site`
 - Node.js: 24
 - Canonical origin: `https://glyphguardian.com`
-- `www.glyphguardian.com`: permanent redirect to the canonical origin, preserving path and query.
-- No Web Analytics injection is required.
+- `www.glyphguardian.com`: permanent redirect to the canonical origin, preserving path and query. The certificate-validation path `/.well-known/acme-challenge/` is excluded so Pages can validate and renew HTTPS.
+- Pages Web Analytics and the domain-level RUM injection are disabled.
 
 ## Release checks
 
